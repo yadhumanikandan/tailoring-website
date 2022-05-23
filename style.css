@@ -1,0 +1,430 @@
+/*Css Variables */
+:root{
+     --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+ 
+    --fresh: #f7f5e6;
+    --vermilion: #333a56;
+    --sunshine: #52658f;
+    --clean: #e8e8e8;
+}
+
+
+html{
+    margin:0;
+    padding:0;
+}
+
+
+.header{
+    height:50vh;
+    width: 100%;
+    background-image: url('1920-blue-textured-background-with-sewing-tools.jpg');
+    background-size:cover;
+    background-position: center;
+}
+    
+ 
+.nav{
+    display:flex;
+    padding: 25px;
+    margin:20px;
+    justify-content: space-between;
+    align-items:center;
+}
+
+
+.nav-links{
+    display:flex;
+    justify-items: space-evenly;
+    }
+
+ .nav-links ul li{
+     list-style: none;
+     display: inline-block;
+     padding: 25px;
+    }
+    
+    .nav-links ul li a{
+        color: var(--clean);
+        text-decoration: none;
+        font-size: 30px;
+    }
+
+    .nav-links ul li a:hover {
+        color: red;
+        transition:0.5s;
+        }
+
+        .welcome{
+            text-align:center;
+            margin: 20px;
+                    }
+        
+        .welcome h1{
+            font-size: 70px;
+            color: darkcyan;
+        }
+
+        .welcome p{
+            font-size:28px;
+        }
+
+        .top-container{
+            display:grid;
+            grid-gap:20px;
+            grid-template-areas: 
+               ' top-box-a showcase showcase'
+               'top-box-b showcase showcase ';
+        }
+   
+        /* Showcase */
+        .showcase {
+            grid-area:showcase;
+            min-height: 400px;
+            background:url("https://www.thefashionstation.in/wp-content/uploads/2022/02/lehenga-designs-4.jpg");
+            background-size:cover;
+            background-position: center;
+            padding: 3rem;
+            display:flex;
+            flex-direction: column;
+            align-items:flex-start;
+            justify-content: center;
+            box-shadow: var(--shadow);
+        }
+   
+        .showcase h1{
+            font-size: 3rem;
+            margin-bottom: 0;
+            color: var(--light)
+        }
+   
+        .showcase p{
+            font-size: 1.3rem;
+            margin-top: 4rem;
+            color: var(--light)
+        }
+   
+        .top-box{
+            background: var(--primary);
+            display:grid;
+            align-items: center;
+            justify-items: center;
+            box-shadow: var(--shadow);
+            padding: 1.5rem;
+        }
+   
+   
+        .top-box-a{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF7MRwArpKQCCUE7chm_I71pHX05sEfZ0ItQ&usqp=CAU');
+            grid-area:top-box-a;
+        }
+   
+        
+        .top-box-b{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://stylesatlife.com/wp-content/uploads/2019/11/25-Latest-Churidar-Dress-Designs-To-Look-Like-a-Desi-Diva.jpg');
+            grid-area:top-box-b;
+       }
+
+
+    @media (max-width:700px){
+        .text-box {
+            font-size: 1.5rem;} 
+        .nav-links ul li{
+            display:block;}
+        }
+
+    
+      
+        
+      
+
+        /* service tab */
+        .service-grid1
+        {   display:grid;
+            grid-gap:20px;
+            row-gap:20px;
+            grid-template-areas: 
+            'box1 box2'
+            'box3 box4'
+            'box5 box6'
+           
+        }
+        img {
+            width: 100%;
+            height: 100%;
+                      }
+
+        .box1{
+            grid-area: box1;
+            min-height: 300px;
+            padding: 3rem;
+            display:flex;
+            flex-direction: column;
+            align-items:flex-start;
+             box-shadow: var(--shadow);
+        }
+
+        .box2{
+            grid-area: box2;
+            min-height: 300px;
+            box-shadow: var(--shadow);
+        }
+
+        .box3{
+            grid-area: box3;
+            min-height: 300px;
+            box-shadow: var(--shadow);
+        }
+
+        .box4{
+            grid-area: box4;
+            min-height: 300px;
+            padding: 3rem;
+            display:flex;
+            flex-direction: column;
+            align-items:flex-start;
+             box-shadow: var(--shadow);
+        }
+
+        .box5{
+            grid-area: box5;
+            min-height: 300px;
+            padding: 3rem;
+            display:flex;
+            flex-direction: column;
+            align-items:flex-start;
+             box-shadow: var(--shadow);
+        }
+
+        .box6{
+            grid-area: box6;
+            min-height: 300px;
+            padding: 3rem;
+            display:flex;
+            flex-direction: column;
+            align-items:flex-start;
+             box-shadow: var(--shadow);
+        }
+       
+
+
+        /* service area */
+        .service-area{
+            width: 100%;
+            max-width: 640px;
+            margin: 0 auto;
+            height: 300px;
+           
+            text-align: center;
+            display: table;
+        }
+
+        footer{
+            padding:20px;
+            margin-top:20px;
+            color: var(--clean);
+            background: black;
+        }
+
+
+
+        /* The grid container
+        About me section */
+
+        .aboutme-grid {
+    display: grid;
+    grid-template-areas: 
+      
+      'left middle right' ;
+     
+    
+  } 
+  
+  .left,
+  .middle,
+  .right {
+    padding: 10px;
+    height: 300px; 
+  }
+  
+  /* Style the left column */
+  .left {
+    grid-area: left;
+    box-shadow: var(--shadow);
+  }
+  
+  /* Style the middle column */
+  .middle {
+    grid-area: middle;
+    box-shadow: var(--shadow);
+    
+  }
+  
+  /* Style the right column */
+  .right {
+    grid-area: right;
+    box-shadow: var(--shadow);
+  }
+  
+
+
+
+
+        @media (max-width:700px){
+            .text-box {
+                font-size: 1.5rem;} 
+
+            .nav-links ul li{
+                display:block;}
+
+                .service-grid1{   
+                    grid-template-areas: 
+                    'box1'
+                    'box2'
+                    'box3'
+                    'box4'
+                    'box5'
+                    'box6'
+                }
+                
+                .aboutme-grid {
+                    display: grid;
+                    grid-template-areas: 
+                      
+                    'left'
+                    'middle' 
+                    'right' ;
+                }
+            }
+               
+        /* gallery */
+
+        .wrap {
+            overflow: hidden;
+            margin: 10px;
+          }
+          .gallery-box {
+            float: left;
+            position: relative;
+            width: 20%;
+            padding-bottom: 20%;
+            
+          }
+          .boxInner {
+            position: absolute;
+            left: 10px;
+            right: 10px;
+            top: 10px;
+            bottom: 10px;
+            overflow: hidden;
+          }
+          .boxInner img {
+            width: 100%;
+          }
+          .boxInner .titleBox {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin-bottom: -50px;
+            background: #fff;
+            background: rgba(0, 0, 0, 0.5);
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            -webkit-transition: all 0.3s ease-out;
+            -moz-transition: all 0.3s ease-out;
+            -o-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+          }
+          section.no-touch .boxInner:hover .titleBox, section.touch .boxInner.touchFocus .titleBox {
+            margin-bottom: 0;
+
+            }
+
+        @media only screen and (max-width : 480px) {
+            /* Smartphone view: 1 tile */
+            .gallery-box {
+              width: 100%;
+              padding-bottom: 100%;
+            }
+          }
+          @media only screen and (max-width : 650px) and (min-width : 481px) {
+            /* Tablet view: 2 tiles */
+            .gallery-box {
+              width: 50%;
+              padding-bottom: 50%;
+            }
+          }
+          @media only screen and (max-width : 1050px) and (min-width : 651px) {
+            /* Small desktop / ipad view: 3 tiles */
+            .gallery-box {
+              width: 33.3%;
+              padding-bottom: 33.3%;
+            }
+          }
+          @media only screen and (max-width : 1290px) and (min-width : 1051px) {
+            /* Medium desktop: 4 tiles */
+            .gallery-box {
+              width: 25%;
+              padding-bottom: 25%;
+            }
+          }
+   
+          /* contact page */
+        
+        .contact-us-header{
+            text-align:center;
+            font-size: 40px;
+        }
+
+        .icon{
+            width:25px;
+            margin:10px;
+            margin-right:20px;
+          
+
+        }
+
+        .contact-info{
+          width: 80%;
+           margin:auto;
+           display:grid;
+           grid-template-areas: 
+           'contact-col1  contact-col2';
+           
+           
+        }
+
+        
+
+        .contact-col div{
+            display:flex;
+            align-items:center;
+            margin-bottom:40px;
+        }
+
+        .contact-col div p{
+            padding:0;
+        }
+
+        .contact-col div h5{
+            font-size:20px;
+            margin-bottom:5px;
+            color:#555;
+
+        }
+
+        .contact-col2 input, .contact-col2 textarea{
+            width:100%;
+            padding:15px;
+            padding-bottom:18px;
+            outline:none;
+            border: 1px,solid,black;
+        }
+            
+
+
+            
+            
+    
