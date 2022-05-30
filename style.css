@@ -155,6 +155,8 @@ html{
                       }
 
         .box1{
+            margin-top: 9px;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://img.grouponcdn.com/deal/3gN39djFsFqTXRxy6xpVWXP2BtQL/3g-700x420/v1/c870x524.jpg');
             grid-area: box1;
             min-height: 300px;
             padding: 3rem;
@@ -165,18 +167,30 @@ html{
         }
 
         .box2{
+            margin-top: 9px;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://4.imimg.com/data4/VL/UN/MY-26613310/maxi-fabric-500x500.jpg');
             grid-area: box2;
             min-height: 300px;
+            padding: 3rem;
+            display:flex;
+            flex-direction: column;
+            align-items:flex-start;
             box-shadow: var(--shadow);
         }
 
         .box3{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://4.imimg.com/data4/UI/WY/MY-26661083/tailoring-service-500x500.jpg');
             grid-area: box3;
             min-height: 300px;
+            padding: 3rem;
+            display:flex;
+            flex-direction: column;
+            align-items:flex-start;
             box-shadow: var(--shadow);
         }
 
         .box4{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('');
             grid-area: box4;
             min-height: 300px;
             padding: 3rem;
